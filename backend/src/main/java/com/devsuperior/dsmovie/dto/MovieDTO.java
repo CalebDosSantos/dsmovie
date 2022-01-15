@@ -14,7 +14,7 @@ public class MovieDTO {
     this.id    =       id;
     this.title =       title;
     this.score =       score;
-    this.count =        count;
+    this.count =       count;
     this.image =       image;
   }
 
