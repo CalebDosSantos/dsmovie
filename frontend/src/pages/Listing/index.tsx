@@ -29,17 +29,13 @@ function Listing() {
     });
   }, [pageNumber]);
 
-  // const movie = {
-    // id: 1,
-    // image: "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/jBJWaqoSCiARWtfV0GlqHrcdidd.jpg",
-    // title: "The Witcher",
-    // count: 2,
-    // score: 4.5
-// };
+  const handlePageChange = (newPageNumber : number) => {
+    setPageNumber(newPageNumber);
+  }
 
-return (
-  <>
-  <Pagination />
+  return (
+    <>
+  <Pagination page={page} onChange={handlePageChange} />
 
   <div className="container">
     <div className="row">
@@ -51,9 +47,10 @@ return (
       )
                        )}
 
+      </div>
     </div>
-    </div>
-    </>);
+    </>
+    );
 }
 
 export default Listing;
