@@ -8,13 +8,13 @@ function NavBar() {
       <nav className="container">
         <div className="dsmovie-nav-content">
           <div> <h1>DSMovie</h1>
-            <a href="https://github.com/CalebDosSantos">
-              <div className="dsmovie-contact-container">
-                <GithubIcon />
-                <p className="dsmovie-contact-link"> /devsuperior </p>
-              </div>
-            </a>
           </div>
+          <a href="https://github.com/CalebDosSantos">
+            <div className="dsmovie-contact-container">
+              <GithubIcon />
+              <p className="dsmovie-contact-link"> /CalebDosSantos </p>
+            </div>
+          </a>
         </div>
       </nav>
     </header>
